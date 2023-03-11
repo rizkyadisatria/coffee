@@ -1,8 +1,7 @@
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("show-left");
-      entry.target.classList.add("show-right");
+      entry.target.classList.add("show");
       entry.target.classList.add("show-up");
       entry.target.classList.add("show-down");
     }
@@ -12,10 +11,8 @@ const observer = new IntersectionObserver((entries) => {
     // }
   });
 });
-const hiddenElementLeft = document.querySelectorAll(".hidden-left");
+const hiddenElementLeft = document.querySelectorAll(".hidden");
 hiddenElementLeft.forEach((el) => observer.observe(el));
-const hiddenElementRight = document.querySelectorAll(".hidden-right");
-hiddenElementRight.forEach((el) => observer.observe(el));
 const hiddenElementUp = document.querySelectorAll(".hidden-up");
 hiddenElementUp.forEach((el) => observer.observe(el));
 const hiddenElementDown = document.querySelectorAll(".hidden-down");
