@@ -6,7 +6,9 @@
 
 a {
     text-decoration: none;
+
 }
+
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -234,10 +236,13 @@ a {
 .icon {
     margin-top: 30px;
 }
-
 .copyright {
+    background-color: #143642;
+}
+
+.copyright p {
     visibility: hidden;
-    max-height: 0;
+    position: fixed;
 }
 
 .header-v2 {
@@ -469,6 +474,11 @@ a {
     color: #F9FBFE;
 }
 
+.footer-wrap img {
+    visibility: hidden;
+    position: fixed;
+}
+
 @media (min-width: 1258px) { 
     .wrapper #right {
         margin-bottom: 400px;
@@ -486,7 +496,22 @@ a {
     }
 }
 
-@media (max-width: 1258px) { 
+@media (max-width: 1258px) {
+    .footer-wrap {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px #D2D2D2 solid;
+    }
+    .footer-wrap img {
+        visibility: visible;
+        position: relative;
+        transform: rotate(180deg);
+        
+    }
+    .footer ul {
+        visibility: hidden;
+        position:fixed;
+    } 
     .logo img {
         margin-left: 40px;
         height: 27px;
@@ -563,7 +588,7 @@ a {
     }
     .footer-logo {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
     .footer-logo img {
@@ -584,19 +609,19 @@ a {
         display: block;
     }
     .footer li {
-        margin-left: 70px;
+        margin-left: 30px;
         font-size: 12px;
     }
     .footer h1 {
         margin-top: 10px;
-        margin-left: 50px;
         font-size: 14px;
     }
-    .footer-url {
-        margin-top: 30px;
+     #top{
+        padding-top: 30px;
     }
     .copyright p {
         visibility: visible;
+        position: relative;
         text-align: center;
         padding-top: 38px;
         font-size: 12px;

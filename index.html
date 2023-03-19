@@ -13,11 +13,13 @@
     <meta name="description" content="Ini adalah contoh website e-commerce untuk produk kopi">
     <meta name="keywords" content="Frontend, HTML, CSS, JavaScript, React, Git, Coffee, Kopi, Rizky, Rizky Adi Satria">
     <meta name="author" content="Rizky Adi Satria">
+    <link rel="shortcut icon" href="/media/Coffee background.png" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Aroma Bumi</title>
 </head>
 
@@ -32,13 +34,13 @@
                 <div class="menu-navbar">
                     <ul>
                         <a href="/menu.html">
-                            <li>Products</li>
+                            <li class="nav-menu">Products</li>
                         </a>
                         <a href="/homebase.html">
-                            <li>Store</li>
+                            <li class="nav-homebase">Store</li>
                         </a>
                         <a href="/help.html">
-                            <li>Contact</li>
+                            <li class="nav-contact">Contact</li>
                         </a>
                     </ul>
                 </div>
@@ -121,23 +123,32 @@
                 <img src="/media/PHONE ICON.svg" width="40" height="32" alt="">
             </div>
         </div>
-        <div class="footer-url">
-            <h1>Products</h1>
-            <ul>
+        <div class="footer-url" id="top">
+            <div class="footer-wrap">
+                <h1>Products</h1>
+                <img class="arrow" src="/media/Arrow.svg" width="30" height="30">
+            </div>
+            <ul class="footer-list">
                 <li>Coffee Based</li>
                 <li>Non-Coffee</li>
                 <li>Tea Based</li>
             </ul>
         </div>
-        <div>
-            <h1>Store</h1>
-            <ul>
+        <div class="footer-url">
+            <div class="footer-wrap">
+                <h1>Store</h1>
+                <img class="arrow" src="/media/Arrow.svg" width="30" height="30">
+            </div>
+            <ul class="footer-list">
                 <li>Location</li>
             </ul>
         </div>
-        <div>
-            <h1>Contact</h1>
-            <ul>
+        <div class="footer-url">
+            <div class="footer-wrap">
+                <h1>Contact</h1>
+                <img class="arrow" src="/media/Arrow.svg" width="30" height="30">
+            </div>
+            <ul class="footer-list">
                 <li>Customer Service</li>
             </ul>
         </div>
@@ -145,7 +156,8 @@
             <p>2023 © Develop by Rizky Adi Satria</p>
         </div>
     </div>
+    <script src="/script.js"></script>
 </body>
-<script src="/script.js"></script>
+
 
 </html>
