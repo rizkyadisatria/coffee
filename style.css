@@ -480,9 +480,9 @@ a {
 }
 
 @media (min-width: 1258px) { 
-    .wrapper #right {
+/*     .wrapper #right {
         margin-bottom: 400px;
-    }
+    } */
     .header-v2 {
         padding-bottom: 39px;
     }
